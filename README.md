@@ -245,8 +245,6 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \
 8. Mulai node
 
 ```
-sudo systemctl start humansd
-sudo systemctl start cosmovisor-humans
 humansd start
 ```
 
