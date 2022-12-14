@@ -95,20 +95,6 @@ go build -o humansd cmd/humansd/main.go
 sudo cp humansd /usr/local/bin/humansd
 ```
 
-cek humansd version
-
-```
-humansd version
-```
-
-> jika terjadi eror "humansd: command not found" 
-
-atur konfigurasi shell
-
-```
-export PATH=$PATH:$(go env GOPATH)/bin
-```
-
 ### STEP 3 : Setup System Daemon
 
 1. Instal Cosmovisor with go install
