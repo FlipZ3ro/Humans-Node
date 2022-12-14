@@ -118,8 +118,9 @@ mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
 mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```
 
-4. Buat layanan untuk Cosmovisor
+4. Buat layanan untuk Cosmovisor & humansd systemmd
 
+Create the service for the Cosmovisor
 ```
 sudo tee /etc/systemd/system/cosmovisor-humans.service<<EOF
 [Unit]
@@ -151,6 +152,37 @@ Aktifkan layanan:
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable cosmovisor-humans
+```
+
+Create the service for humansd.service
+```
+sudo tee /etc/systemd/system/humansd.service<<EOF
+[Unit]
+Description=Humans Node
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=exec
+User=<your_user>
+Group=<your_user_group>
+ExecStart=/home/<your_user>/go/bin/humansd start --home /home/<your_user>/.humans
+Restart=on-failure
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGTERM
+PermissionsStartOnly=true
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+
+Aktifkan layanan:
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable humansd
 ```
 
 ### STEP 4 : Creath wallet & Perbarui daftar peer
