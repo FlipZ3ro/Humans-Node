@@ -310,3 +310,9 @@ humansd tx staking create-validator \
 > Kalian edit <key-name> dan <your-moniker>
 
 ### DONE SELESAI, tunggu update selanjutnya atau bisa pantau Discord nya
+ 
+untuk menghapus node 
+ ```
+ sudo rm -rf $HOME/.humans
+ sudo rm $HOME/go/bin/humansd
+ ```
