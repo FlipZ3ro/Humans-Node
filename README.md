@@ -178,7 +178,7 @@ curl -s https://rpc-testnet.humans.zone/genesis | jq -r .result.genesis > genesi
 Kemudian salin file genesis ke folder $HOME/.humans/config
 
 ```
-cp genesis.json $HOME /.humans/config/genesis.json
+cp genesis.json $HOME/.humans/config/genesis.json
 ```
 
 4. Konfigurasi persistent_peers.txt
