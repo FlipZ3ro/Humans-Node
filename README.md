@@ -161,14 +161,14 @@ sudo systemctl enable cosmovisor-humans
 cd $HOME
 humansd init <moniker-name> --chain-id=testnet-1 --home $HOME/.humans
 ```
-> moniker-name ganti dengan nama kalian
+> <moniker-name> ganti dengan nama kalian
 
 2. Buat dompet
 
 ```
 humansd keys add <key-name>
 ```
-> key-name ganti nama kalian atau samain nama moniker 
+> <key-name> ganti nama kalian atau samain nama moniker 
 
 3. Konfigurasi genesis.json
 
@@ -196,7 +196,7 @@ isi dengan
 eda3e2255f3c88f97673d61d6f37b243de34e9d9@45.136.40.13:26656
 4de8c8acccecc8e0bed4a218c2ef235ab68b5cf2@45.136.40.12:26656
 ```
-> simpan file dengan ketik ctrl + x terus y
+> simpan file dengan tekan <kbd>CTRL</kbd> + <kbd>x</kbd> + <kbd>Y</kbd> lalu tekan <kbd>Enter</kbd>
 
 lalu Jalankan
 ```
