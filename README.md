@@ -118,7 +118,7 @@ mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
 mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```
 
-4. Buat layanan untuk Cosmovisor & humansd systemmd
+4. Buat layanan untuk Cosmovisor & humansd
 
 Create the service for the Cosmovisor
 ```
