@@ -37,7 +37,7 @@ sudo apt update
 sudo apt upgrade --yes
 ```
 
-## STEP 2 : Installing the Humans Binary
+### STEP 2 : Installing the Humans Binary
 
 Instal Opsi 1 | Mengunduh biner
 
