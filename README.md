@@ -90,13 +90,10 @@ Kompilasi kode sumber mengkloning humansdotai/humans repo
 cd  $HOME
 git clone https://github.com/humansdotai/humans
 cd humans
+git pull
+git fetch --tags
 git checkout v1.0.0
-go build -o humansd cmd/humansd/main.go
-```
-> Setelah build, salin langsung ke folder /usr/local/bin 
-
-```
-sudo  cp humansd /usr/local/bin/humansd
+make install
 ```
 
 cek humansd version
