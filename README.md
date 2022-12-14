@@ -28,7 +28,7 @@
 |----------|---------------------|
 |System|Ubuntu 20.04 (LTS) X64|
 
-## Run node and creath Validator
+## Run node and creat Validator
 
 ### STEP 1 : Perbarui sistem
 
