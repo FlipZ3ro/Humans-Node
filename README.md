@@ -277,8 +277,9 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \
 \"$PRUNING_INTERVAL\"/" $HOME/.humans/config/app.toml
 ```
+### STEP 5 : Run NODE dan Req faucet
 
-8. Mulai node
+1. Mulai node
 
 ```
 humansd start
@@ -292,7 +293,7 @@ Cek Block Syncron
 humansd status 2>&1 | jq .SyncInfo
 ```
 
-9. Request Faucet di [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) masuk channel #testnet-faucet
+2. Request Faucet di [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) masuk channel #testnet-faucet
 
 
 ```
@@ -312,7 +313,7 @@ Outputnya akan terlihat mirip dengan ini.
 React emoji di channel #roles untuk role ⚔️Testnet  
 
 
-### STEP 5 : Buat validator jika block sudah syncron
+### STEP 6 : Buat validator jika block sudah syncron
 
 ```
 humansd tx staking create-validator \
