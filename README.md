@@ -285,7 +285,6 @@ Cek Block Syncron
 
 ```
 humansd status 2>&1 | jq .SyncInfo
-
 ```
 
 9. Minta token dari [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) (membuka jendela baru)dalam #testnet-faucetjika diperlukan. Gunakan $help untuk melihat fungsi faucet lainnya. Ganti alamat di bawah ini dengan alamat Anda sendiri. Harap diperhatikan, bahwa batas permintaan mingguan saat ini untuk Discord Humans Faucet adalah 10HEART ( 10000000uheart)
