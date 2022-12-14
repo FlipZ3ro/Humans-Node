@@ -190,16 +190,16 @@ sudo systemctl enable humansd
 
 ```
 cd $HOME
-humansd init <moniker-name> --chain-id=testnet-1 --home $HOME/.humans
+humansd init moniker-name --chain-id=testnet-1 --home $HOME/.humans
 ```
-> <moniker-name> ganti dengan nama kalian
+> moniker-name ganti dengan nama kalian
 
 2. Buat dompet
 
 ```
-humansd keys add <key-name>
+humansd keys add key-name
 ```
-> <key-name> ganti nama kalian atau samain nama moniker 
+> key-name ganti nama kalian atau samain nama moniker 
 
 3. Konfigurasi genesis.json
 
@@ -278,6 +278,8 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \
 ```
 humansd start
 ```
+
+> Jika terjadi eror abaikan saja dan tunggu hingga proses syncron selesai
 
 9. Minta token dari [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) (membuka jendela baru)dalam #testnet-faucetjika diperlukan. Gunakan $help untuk melihat fungsi faucet lainnya. Ganti alamat di bawah ini dengan alamat Anda sendiri. Harap diperhatikan, bahwa batas permintaan mingguan saat ini untuk Discord Humans Faucet adalah 10HEART ( 10000000uheart)
 
