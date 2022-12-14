@@ -197,7 +197,11 @@ eda3e2255f3c88f97673d61d6f37b243de34e9d9@45.136.40.13:26656
 4de8c8acccecc8e0bed4a218c2ef235ab68b5cf2@45.136.40.12:26656
 ```
 > simpan file dengan tekan <kbd>CTRL</kbd> + <kbd>x</kbd> + <kbd>Y</kbd> lalu tekan <kbd>Enter</kbd>
-
+ 
+```
+rm -rf persistent_peers.txt
+```
+ 
 lalu Jalankan
 ```
 export PEERS=$(cat persistent_peers.txt| tr '\n' '_' | sed 's/_/,/g;s/,$//;s/^/"/;s/$/"/') && sed -i "s/persistent_peers = \"\"/persistent_peers = ${PEERS}/g" $HOME/.humans/config/config.toml
