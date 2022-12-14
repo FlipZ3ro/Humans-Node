@@ -3,7 +3,7 @@
 
 ## Referensi
 
-[Dokumen resmi](https://docs.humans.zone/run-nodes/testnet/joining-testnet.html/)
+[Dokumen resmi](https://docs.humans.zone/run-nodes/testnet/joining-testnet.html)
 
 [Explorer](https://explorer.humans.zone/humans-testnet/)
 
