@@ -295,6 +295,7 @@ humansd status 2>&1 | jq .SyncInfo
 
 2. Request Faucet di [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) masuk channel #testnet-faucet
 
+React emoji di channel #roles untuk role ⚔️Testnet 
 
 ```
 $request address-humans
@@ -308,10 +309,7 @@ Outputnya akan terlihat mirip dengan ini.
 "block": 49335,
 "gas": 76364    
 }
-```
-
-React emoji di channel #roles untuk role ⚔️Testnet  
-
+``` 
 
 ### STEP 6 : Buat validator jika block sudah syncron
 
