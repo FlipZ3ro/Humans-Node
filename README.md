@@ -118,13 +118,7 @@ mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
 mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```
 
-4. Tambahkan versi asal dari biner
-
-```
-cp ~/go/bin/humansd $DAEMON_HOME/cosmovisor/genesis/bin
-```
-
-5. Buat layanan untuk Cosmovisor
+4. Buat layanan untuk Cosmovisor
 
 ```
 sudo tee /etc/systemd/system/cosmovisor-humans.service<<EOF
