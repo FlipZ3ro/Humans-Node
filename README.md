@@ -120,7 +120,7 @@ mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 
 4. Buat layanan untuk Cosmovisor & humansd
 
-  Create the service for the Cosmovisor
+Create the service for the Cosmovisor
 
 ```
 sudo tee /etc/systemd/system/cosmovisor-humans.service<<EOF
@@ -148,7 +148,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-  Create the service for humansd.service
+Create the service for humansd.service
 
 ```
 sudo tee /etc/systemd/system/humansd.service<<EOF
@@ -280,6 +280,13 @@ humansd start
 ```
 
 > Jika terjadi eror abaikan saja dan tunggu hingga proses syncron selesai
+
+Cek Block Syncron 
+
+```
+humansd status 2>&1 | jq .SyncInfo
+
+```
 
 9. Minta token dari [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) (membuka jendela baru)dalam #testnet-faucetjika diperlukan. Gunakan $help untuk melihat fungsi faucet lainnya. Ganti alamat di bawah ini dengan alamat Anda sendiri. Harap diperhatikan, bahwa batas permintaan mingguan saat ini untuk Discord Humans Faucet adalah 10HEART ( 10000000uheart)
 
