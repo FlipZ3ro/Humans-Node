@@ -330,7 +330,7 @@ humansd tx staking create-validator \
 --from <key-name>
 ```
 
-> Kalian edit <key-name> dan <your-moniker>
+> Kalian edit key-name dan your-moniker
 
 ### DONE SELESAI, tunggu update selanjutnya atau bisa pantau Discord nya
  
