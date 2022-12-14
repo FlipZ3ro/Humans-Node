@@ -87,13 +87,12 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 Kompilasi kode sumber mengkloning humansdotai/humans repo
 
 ```
-cd  $HOME
+cd $HOME
 git clone https://github.com/humansdotai/humans
 cd humans
-git pull
-git fetch --tags
 git checkout v1.0.0
-make install
+go build -o humansd cmd/humansd/main.go
+sudo cp humansd /usr/local/bin/humansd
 ```
 
 cek humansd version
@@ -102,7 +101,6 @@ cek humansd version
 humansd version
 ```
 
-> Jika muncul v1.0.0 artinya sukses
 > jika terjadi eror "humansd: command not found" 
 
 atur konfigurasi shell
