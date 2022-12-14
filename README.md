@@ -118,6 +118,11 @@ mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
 mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```
 
+Copas folder humansd
+```
+cp /usr/local/bin/humansd $DAEMON_HOME/cosmovisor/genesis/bin
+```
+
 4. Buat layanan untuk Cosmovisor & humansd
 
 Create the service for the Cosmovisor
