@@ -120,7 +120,7 @@ mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 
 4. Buat layanan untuk Cosmovisor & humansd
 
-Create the service for the Cosmovisor
+  Create the service for the Cosmovisor
 
 ```
 sudo tee /etc/systemd/system/cosmovisor-humans.service<<EOF
@@ -148,7 +148,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Create the service for humansd.service
+  Create the service for humansd.service
 
 ```
 sudo tee /etc/systemd/system/humansd.service<<EOF
@@ -173,7 +173,7 @@ WantedBy=multi-user.target
 EOF
 ```
 
-Aktifkan layanan:
+  Aktifkan layanan:
 
 ```
 sudo systemctl daemon-reload
