@@ -54,7 +54,7 @@ tar -xvf humans_latest_linux_amd64.tar.gz
 salin humans ke folder /usr/local/bin
 
 ```
-sudo  cphumansd /usr/local/bin/humansd
+sudo cp humansd /usr/local/bin/humansd
 ```
 > Done Lanjut Opsi 2
 
