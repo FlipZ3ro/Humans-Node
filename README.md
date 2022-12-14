@@ -287,10 +287,11 @@ Cek Block Syncron
 humansd status 2>&1 | jq .SyncInfo
 ```
 
-9. Minta token dari [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) (membuka jendela baru)dalam #testnet-faucetjika diperlukan. Gunakan $help untuk melihat fungsi faucet lainnya. Ganti alamat di bawah ini dengan alamat Anda sendiri. Harap diperhatikan, bahwa batas permintaan mingguan saat ini untuk Discord Humans Faucet adalah 10HEART ( 10000000uheart)
+9. Request Faucet di [Discord Faucet untuk testnet-1](https://discord.com/invite/humansdotai/) masuk channel #testnet-faucet
+
 
 ```
-$request human1ppa65ec56rqvf4z4v393l0n7llnscw483yftrk
+$request address-humans
 ```
 
 Outputnya akan terlihat mirip dengan ini.
@@ -303,7 +304,7 @@ Outputnya akan terlihat mirip dengan ini.
 }
 ```
 
-dan dapatkan role ⚔️ Testnet  react emoji di channel #roles
+React emoji di channel #roles untuk role ⚔️Testnet  
 
 
 ### STEP 5 : Buat validator jika block sudah syncron
